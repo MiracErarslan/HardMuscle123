@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tüm Ürünler | HardMuscle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-logo">Hard <span>Muscle</span></div>
+        <div class="loader-ring"></div>
+    </div>
+
+    <header>
+        <a href="home.html" class="logo">HARD<span>MUSCLE</span></a>
+        <ul class="nav-links">
+            <li><a href="home.html">Ana Sayfa</a></li>
+            <li><a href="products.html" style="color: var(--primary);">Ürünler</a></li>
+            <li><a href="classes.html">Dersler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <a href="products.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Sipariş Ver</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="listing-section" style="opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out;">
+        <div class="listing-header">
+            <h1>Premium <span>Ürünler</span></h1>
+            <p style="color: var(--text-gray); font-size: 1.1rem; max-width: 600px; margin: 1rem auto 0;">En kaliteli protein, amino asit ve performans destekleyici takviyeleri burada keşfedin.</p>
+        </div>
+
+        <div class="listing-container">
+            <!-- Sidebar Filters -->
+            <aside class="filter-sidebar">
+                <div class="filter-group">
+                    <h3 class="filter-title">Kategori</h3>
+                    <label class="filter-option">
+                        <input type="checkbox" checked> Protein Tozları
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Amino Asit & BCAA
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Performans (Pre-Workout)
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Kreatin
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Vitaminler
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Fiyat Aralığı</h3>
+                    <label class="filter-option">
+                        <input type="checkbox"> 0 - 500 ₺
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> 500 ₺ - 1000 ₺
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> 1000 ₺ - 2000 ₺
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> 2000 ₺+
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Aroma</h3>
+                    <label class="filter-option">
+                        <input type="checkbox"> Çikolata
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Çilek
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Vanilla
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Aromasız
+                    </label>
+                </div>
+
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem;">Filtreleri Uygula</a>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="listing-grid">
+                <!-- Product 1 -->
+                <div class="card">
+                    <div class="badge">Çok Satan</div>
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?q=80&w=2070&auto=format&fit=crop"
+                            alt="Whey Protein" class="card-img" style="object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">100% Gold Whey Protein</h3>
+                        <p class="card-desc">Kas onarımını hızlandıran, 24 gram saf protein içeren premium formül.</p>
+                        <div class="card-price">1.299 ₺</div>
+                        <a href="product-detail.html" class="btn btn-primary" style="width: 100%; text-align: center;">Ürünü İncele</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="card">
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1579722820308-d74e571900a9?q=80&w=2070&auto=format&fit=crop"
+                            alt="Isolate Protein" class="card-img" style="object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Pure Isolate Zero</h3>
+                        <p class="card-desc">Sıfır şeker, sıfır yağ. Definasyon dönemi için mükemmel izole protein.</p>
+                        <div class="card-price">1.599 ₺</div>
+                        <a href="product-detail.html" class="btn btn-primary" style="width: 100%; text-align: center;">Ürünü İncele</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="card">
+                    <div class="badge" style="background: #00ff88; color: #000;">Yeni</div>
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1552604617-e9bd11059f1f?q=80&w=2070&auto=format&fit=crop"
+                            alt="Vegan Protein" class="card-img" style="object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Plant-Based Power</h3>
+                        <p class="card-desc">%100 bitkisel kaynaklı, vegan dostu, bezelye ve pirinç proteini karışımı.</p>
+                        <div class="card-price">1.199 ₺</div>
+                        <a href="product-detail.html" class="btn btn-primary" style="width: 100%; text-align: center;">Ürünü İncele</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="card">
+                    <a href="product-detail.html">
+                        <img src="https://plus.unsplash.com/premium_photo-1664302152996-32d18b8de31b?q=80&w=2080&auto=format&fit=crop"
+                            alt="Creatine" class="card-img" style="object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Creatine Monohydrate</h3>
+                        <p class="card-desc">Güç artışı ve hacim için mikronize %100 saf kreatin tozu. Aromasız.</p>
+                        <div class="card-price">699 ₺</div>
+                        <a href="product-detail.html" class="btn btn-primary" style="width: 100%; text-align: center;">Ürünü İncele</a>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="card">
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop"
+                            alt="BCAA" class="card-img" style="object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">BCAA 2:1:1 Energy</h3>
+                        <p class="card-desc">Antrenman sırasında enerji veren ve yıkımı önleyen amino asit kompleksi.</p>
+                        <div class="card-price">899 ₺</div>
+                        <a href="product-detail.html" class="btn btn-primary" style="width: 100%; text-align: center;">Ürünü İncele</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="card">
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1594882645126-14020914d58d?q=80&w=2085&auto=format&fit=crop"
+                            alt="Pre-Workout" class="card-img" style="object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Explosion Pre-Workout</h3>
+                        <p class="card-desc">Maksimum odaklanma, pump ve enerji için özel formüle edilmiş antrenman öncesi.</p>
+                        <div class="card-price">799 ₺</div>
+                        <a href="product-detail.html" class="btn btn-primary" style="width: 100%; text-align: center;">Ürünü İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Hard<span>Muscle</span></h3>
+                <p>Türkiye'nin en yenilikçi fitness markası. Hedeflerinize ulaşmanız için ihtiyacınız olan her şey
+                    kaliteli bir yapıda burada.</p>
+            </div>
+            <div class="footer-col footer-links">
+                <h3>Hızlı Linkler</h3>
+                <a href="home.html">Ana Sayfa</a>
+                <a href="products.html">Ürünler</a>
+                <a href="classes.html">Ders Programı</a>
+                <a href="contact.html">İletişim / Hakkımızda</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HardMuscle. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const listingSection = document.querySelector('.listing-section');
+                if (listingSection) {
+                    listingSection.style.opacity = "1";
+                    listingSection.style.transform = "translateY(0)";
+                }
+            }, 300);
+        });
+    </script>
+</body>
+</html>

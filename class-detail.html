@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Detayı | HardMuscle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .class-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=2070&auto=format&fit=crop') center/cover;
+            padding: 10rem 5% 5rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .class-detail-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 5%;
+        }
+
+        .class-highlights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .highlight-box {
+            background: var(--dark);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            transition: 0.3s;
+        }
+
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        @media (max-width: 900px) {
+            .class-detail-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .class-highlights-grid {
+                grid-template-columns: 1fr;
+            }
+            .class-hero {
+                padding: 8rem 5% 4rem;
+            }
+            .class-hero h1 {
+                font-size: 2.5rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-logo">Hard <span>Muscle</span></div>
+        <div class="loader-ring"></div>
+    </div>
+
+    <header>
+        <a href="home.html" class="logo">HARD<span>MUSCLE</span></a>
+        <ul class="nav-links">
+            <li><a href="home.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="classes.html">Dersler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <a href="classes.html" class="btn btn-outline" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Tüm Dersler</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="class-detail-section" style="opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out;">
+        
+        <!-- Cover Video/Image -->
+        <div class="class-hero">
+            <h1 style="font-size: 3.5rem; color: white; text-transform: uppercase; font-weight: 800; margin-bottom: 1rem;">Crossfit <span style="color: var(--primary);">Bootcamp</span></h1>
+            <p style="color: var(--text-gray); font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">Sınırlarınızı yeniden tanımlayacak, yoğun, sonuç odaklı ve heyecan verici bir fonksiyonel antrenman programı.</p>
+        </div>
+
+        <div class="class-detail-container">
+            <!-- Left: Description and Highlights -->
+            <div class="class-info-main">
+                <h2 style="font-size: 2.2rem; color: white; margin-bottom: 1.5rem; text-transform: uppercase;">Ders <span style="color: var(--primary);">Hakkında</span></h2>
+                <p style="color: var(--light); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2.5rem;">
+                    Crossfit Bootcamp serimiz, hem yeni başlayanlar hem de ileri seviye sporcular için özel olarak ölçeklendirilmiş yüksek yoğunluklu bir fonkisyonel antrenmandır. Her gün farklılaşan (WOD) antrenman rutini sayesinde vücudunuz sürekli yeni bir uyarıcıyla karşılaşır ve gelişimi hiç durmaz. Sadece ağırlık kaldırmakla kalmayacak; kardiyovasküler dayanıklılığınızı, esnekliğinizi, hızınızı ve patlayıcı gücünüzü bir üst seviyeye taşıyacaksınız.
+                </p>
+
+                <h3 style="color: white; font-size: 1.5rem; margin-bottom: 1.5rem;">Neler Kazanacaksınız?</h3>
+                <div class="class-highlights-grid">
+                    <div class="highlight-box">
+                        <i class="fas fa-fire" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Yüksek Kalori Yakımı</h4>
+                        <p style="color: var(--text-gray); font-size: 0.95rem;">Bir seans boyunca yaklaşık 600-800 kalori yakarak yağ oranınızı azaltın.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <i class="fas fa-dumbbell" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Tam Vücut Gelişimi</h4>
+                        <p style="color: var(--text-gray); font-size: 0.95rem;">Tek bir kas grubuna odaklanmak yerine tüm vücudu senkronize bir şekilde çalıştırın.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <i class="fas fa-heartbeat" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Esneklik & Kondisyon</h4>
+                        <p style="color: var(--text-gray); font-size: 0.95rem;">Daha iyi bir hareket kabiliyeti ve günlük yaşamda enerjik hissetme olanağı.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <i class="fas fa-users" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Takım Ruhu</h4>
+                        <p style="color: var(--text-gray); font-size: 0.95rem;">Grup dinamiğinin verdiği motivasyonla antrenmanları daha eğlenceli hale getirin.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Sidebar (Details and Trainer) -->
+            <div class="class-sidebar">
+                <div style="background: var(--secondary); padding: 2.5rem 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 2rem;">
+                    <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1.5rem; text-transform: uppercase;">Program <span style="color: var(--primary);">Detayları</span></h3>
+                    <ul style="list-style: none;">
+                        <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; color: var(--text-gray); border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.8rem;">
+                            <span><i class="far fa-calendar-alt" style="color: var(--primary); margin-right: 10px; font-size: 1.1rem;"></i> Gün:</span>
+                            <span style="color: white; font-weight: 600;">Pzt - Çar - Cuma</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; color: var(--text-gray); border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.8rem;">
+                            <span><i class="far fa-clock" style="color: var(--primary); margin-right: 10px; font-size: 1.1rem;"></i> Saat:</span>
+                            <span style="color: white; font-weight: 600;">19:00 - 20:00</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; color: var(--text-gray); border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.8rem;">
+                            <span><i class="fas fa-signal" style="color: var(--primary); margin-right: 10px; font-size: 1.1rem;"></i> Seviye:</span>
+                            <span style="color: white; font-weight: 600;">Tüm Seviyeler</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; color: var(--text-gray); border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.8rem;">
+                            <span><i class="fas fa-user-friends" style="color: var(--primary); margin-right: 10px; font-size: 1.1rem;"></i> Kapasite:</span>
+                            <span style="color: white; font-weight: 600;">Max 15 Kişi</span>
+                        </li>
+                    </ul>
+                    <a href="home.html#contact" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1.5rem; font-size: 1.1rem; padding: 1rem; border-radius: 30px; display: block;">Hemen Katıl</a>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; text-align: center; margin-top: 1rem;">İlk demo seansı tamamen ücretsizdir!</p>
+                </div>
+                
+                <!-- Trainer Info -->
+                <div style="background: var(--dark); padding: 2.5rem 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255,255,255,0.05);">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" alt="Trainer" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 4px solid var(--primary); box-shadow: 0 0 15px rgba(255,77,77,0.3);">
+                    <h3 style="color: white; font-size: 1.3rem; margin-bottom: 0.2rem;">Kaan Demir</h3>
+                    <p style="color: var(--primary); font-size: 0.95rem; margin-bottom: 1rem; font-weight: 600; text-transform: uppercase;">Baş Eğitmen</p>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">Level 2 Crossfit antrenörü ve eski milli sporcu. 10 yıllık deneyimiyle limitlerinizi aşmanıza yardımcı olacak.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer same as home.html -->
+    <footer id="contact" style="border-top: none;">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Hard<span>Muscle</span></h3>
+                <p>Türkiye'nin en yenilikçi fitness markası. Hedeflerinize ulaşmanız için ihtiyacınız olan her şey
+                    kaliteli bir yapıda burada.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col footer-links">
+                <h3>Hızlı Linkler</h3>
+                <a href="home.html">Ana Sayfa</a>
+                <a href="products.html">Ürünler</a>
+                <a href="classes.html">Ders Programı</a>
+                <a href="contact.html">İletişim / Hakkımızda</a>
+            </div>
+            <div class="footer-col">
+                <h3>İletişim</h3>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Fitness Cad.
+                    No:123, Kadıköy/İstanbul</p>
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> +90 555 123 45 67</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i>
+                    info@HardMuscle.com
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HardMuscle. Tüm hakları saklıdır. Tasarım & Geliştirme</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Trigger reveal animation
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const detailSection = document.querySelector('.class-detail-section');
+                if (detailSection) {
+                    detailSection.style.opacity = "1";
+                    detailSection.style.transform = "translateY(0)";
+                }
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>

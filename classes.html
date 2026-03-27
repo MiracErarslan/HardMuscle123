@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Programı | HardMuscle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-logo">Hard <span>Muscle</span></div>
+        <div class="loader-ring"></div>
+    </div>
+
+    <header>
+        <a href="home.html" class="logo">HARD<span>MUSCLE</span></a>
+        <ul class="nav-links">
+            <li><a href="home.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="classes.html" style="color: var(--primary);">Dersler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <a href="classes.html" class="btn btn-outline" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Ücretsiz Dene</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="listing-section" style="opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out;">
+        <div class="listing-header">
+            <h1>Profesyonel <span>Dersler</span></h1>
+            <p style="color: var(--text-gray); font-size: 1.1rem; max-width: 600px; margin: 1rem auto 0;">Farklı seviyelere hitap eden, hedeflerinize yönelik uzman eğitmenler eşliğinde grup dersleri.</p>
+        </div>
+
+        <div class="listing-container">
+            <!-- Sidebar Filters -->
+            <aside class="filter-sidebar">
+                <div class="filter-group">
+                    <h3 class="filter-title">Ders Tipi</h3>
+                    <label class="filter-option">
+                        <input type="checkbox" checked> Crossfit
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Ağırlık / Hipertrofi
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Yoga & Pilates
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Kardiyo / HIIT
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Boks / Dövüş Sanatları
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Seviye</h3>
+                    <label class="filter-option">
+                        <input type="checkbox"> Başlangıç
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Orta
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> İleri
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Tüm Seviyeler
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Günler</h3>
+                    <label class="filter-option">
+                        <input type="checkbox"> Hafta İçi
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Hafta Sonu
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Sabah Dersleri
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Akşam Dersleri
+                    </label>
+                </div>
+
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem;">Filtreleri Uygula</a>
+            </aside>
+
+            <!-- Classes Grid -->
+            <div class="listing-grid">
+                <!-- Class 1 -->
+                <a href="class-detail.html" class="class-card">
+                    <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=2070&auto=format&fit=crop"
+                        alt="Crossfit" class="class-img">
+                    <div class="class-info">
+                        <h3 class="class-title">Crossfit Bootcamp</h3>
+                        <div class="class-time"><i class="far fa-clock" style="color: var(--primary)"></i> Pzt - Çar - Cuma
+                            | 19:00</div>
+                    </div>
+                </a>
+                <!-- Class 2 -->
+                <a href="class-detail.html" class="class-card">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop"
+                        alt="Ağırlık Antrenmanı" class="class-img">
+                    <div class="class-info">
+                        <h3 class="class-title">Güç & Hipertrofi</h3>
+                        <div class="class-time"><i class="far fa-clock" style="color: var(--primary)"></i> Her Gün | 09:00 -
+                            22:00</div>
+                    </div>
+                </a>
+                <!-- Class 3 -->
+                <a href="class-detail.html" class="class-card">
+                    <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f4ff?q=80&w=2069&auto=format&fit=crop"
+                        alt="Yoga" class="class-img">
+                    <div class="class-info">
+                        <h3 class="class-title">Mobilite & Pilates</h3>
+                        <div class="class-time"><i class="far fa-clock" style="color: var(--primary)"></i> Salı - Perşembe |
+                            08:00</div>
+                    </div>
+                </a>
+                <!-- Class 4 -->
+                <a href="class-detail.html" class="class-card">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2070&auto=format&fit=crop"
+                        alt="HIIT" class="class-img">
+                    <div class="class-info">
+                        <h3 class="class-title">HIIT Kardiyo</h3>
+                        <div class="class-time"><i class="far fa-clock" style="color: var(--primary)"></i> Cuma |
+                            18:00</div>
+                    </div>
+                </a>
+                <!-- Class 5 -->
+                <a href="class-detail.html" class="class-card">
+                    <img src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=2000&auto=format&fit=crop"
+                        alt="Boxing" class="class-img">
+                    <div class="class-info">
+                        <h3 class="class-title">Kickboks</h3>
+                        <div class="class-time"><i class="far fa-clock" style="color: var(--primary)"></i> Cumartesi |
+                            11:00</div>
+                    </div>
+                </a>
+                <!-- Class 6 -->
+                <a href="class-detail.html" class="class-card">
+                    <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=2069&auto=format&fit=crop"
+                        alt="Functional" class="class-img">
+                    <div class="class-info">
+                        <h3 class="class-title">Fonksiyonel Antrenman</h3>
+                        <div class="class-time"><i class="far fa-clock" style="color: var(--primary)"></i> Salı - Perşembe |
+                            20:00</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Hard<span>Muscle</span></h3>
+                <p>Türkiye'nin en yenilikçi fitness markası. Hedeflerinize ulaşmanız için ihtiyacınız olan her şey
+                    kaliteli bir yapıda burada.</p>
+            </div>
+            <div class="footer-col footer-links">
+                <h3>Hızlı Linkler</h3>
+                <a href="home.html">Ana Sayfa</a>
+                <a href="products.html">Ürünler</a>
+                <a href="classes.html">Ders Programı</a>
+                <a href="contact.html">İletişim / Hakkımızda</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HardMuscle. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const listingSection = document.querySelector('.listing-section');
+                if (listingSection) {
+                    listingSection.style.opacity = "1";
+                    listingSection.style.transform = "translateY(0)";
+                }
+            }, 300);
+        });
+    </script>
+</body>
+</html>

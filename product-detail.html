@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayı | HardMuscle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-logo">Hard <span>Muscle</span></div>
+        <div class="loader-ring"></div>
+    </div>
+
+    <header>
+        <a href="home.html" class="logo">HARD<span>MUSCLE</span></a>
+        <ul class="nav-links">
+            <li><a href="home.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="classes.html">Dersler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <a href="products.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Diğer Ürünler</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="product-detail-section" style="opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out;">
+        <div class="product-detail-container">
+            <div class="product-detail-img-wrapper">
+                <div class="badge" style="font-size: 1rem; padding: 0.5rem 1.5rem; top: 20px; right: 20px;">Çok Satan</div>
+                <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?q=80&w=2070&auto=format&fit=crop"
+                    alt="Whey Protein" class="product-detail-img">
+            </div>
+            <div class="product-detail-info">
+                <h1 class="product-detail-title">100% Gold Whey Protein</h1>
+                <div class="product-detail-price">1.299 ₺</div>
+                <p class="product-detail-desc">
+                    HardMuscle 100% Gold Whey Protein, yoğun antrenmanlarınızdan sonra kas onarımını en üst düzeye çıkarmak için geliştirilmiş premium bir formüldür. Her servisinde 24 gram yüksek kaliteli, hızlı emilen whey proteini sunar. İster definasyon döneminde olun ister hacim kazanmaya çalışın, bu ürün hedeflerinize ulaşmanızı destekler.
+                </p>
+                <ul class="product-features">
+                    <li><i class="fas fa-check-circle"></i> Her serviste 24g saf protein</li>
+                    <li><i class="fas fa-check-circle"></i> 5.5g BCAA ile hızlı kas onarımı</li>
+                    <li><i class="fas fa-check-circle"></i> 4g Glutamin öncüsü amino asitler</li>
+                    <li><i class="fas fa-check-circle"></i> Lezzetli ve kolay karışan formül</li>
+                </ul>
+                <div class="product-options" style="margin-bottom: 2rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--text-gray);">Aroma Seçin:</label>
+                    <select class="quantity-input" style="width: 100%; max-width: 250px; text-align: left;">
+                        <option>Zengin Çikolata</option>
+                        <option>Çilek & Muz</option>
+                        <option>Kurabiye (Cookies)</option>
+                        <option>Vanilya Dondurma</option>
+                    </select>
+                </div>
+                <div class="product-actions">
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="btn btn-primary" style="flex-grow: 1; padding: 1rem;"><i class="fas fa-shopping-cart" style="margin-right: 10px;"></i> Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" style="border-top: none;">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Hard<span>Muscle</span></h3>
+                <p>Türkiye'nin en yenilikçi fitness markası. Hedeflerinize ulaşmanız için ihtiyacınız olan her şey
+                    kaliteli bir yapıda burada.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col footer-links">
+                <h3>Hızlı Linkler</h3>
+                <a href="home.html">Ana Sayfa</a>
+                <a href="products.html">Ürünler</a>
+                <a href="classes.html">Ders Programı</a>
+                <a href="contact.html">İletişim / Hakkımızda</a>
+            </div>
+            <div class="footer-col">
+                <h3>İletişim</h3>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Fitness Cad.
+                    No:123, Kadıköy/İstanbul</p>
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> +90 555 123 45 67</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i>
+                    info@HardMuscle.com
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HardMuscle. Tüm hakları saklıdır. Tasarım & Geliştirme</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Trigger reveal animation for product details page specifically
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const detailSection = document.querySelector('.product-detail-section');
+                if (detailSection) {
+                    detailSection.style.opacity = "1";
+                    detailSection.style.transform = "translateY(0)";
+                }
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>

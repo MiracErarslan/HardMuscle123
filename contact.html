@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | HardMuscle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-logo">Hard <span>Muscle</span></div>
+        <div class="loader-ring"></div>
+    </div>
+
+    <header>
+        <a href="home.html" class="logo">HARD<span>MUSCLE</span></a>
+        <ul class="nav-links">
+            <li><a href="home.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="classes.html">Dersler</a></li>
+            <li><a href="contact.html" style="color: var(--primary);">İletişim</a></li>
+        </ul>
+        <a href="products.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Sipariş Ver</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="contact-section" style="opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out;">
+        <div class="listing-header">
+            <h1>Bizimle <span>İletişime</span> Geçin</h1>
+            <p style="color: var(--text-gray); font-size: 1.1rem; max-width: 600px; margin: 1rem auto 3rem;">Sorularınız, önerileriniz veya kayıt işlemleri için aşağıdaki formu doldurabilir ya da iletişim bilgilerimizden bize ulaşabilirsiniz.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3 style="color: white; font-size: 1.8rem; margin-bottom: 2rem;">Mesaj Gönderin</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label class="form-label">Adınız Soyadınız</label>
+                        <input type="text" class="form-control" placeholder="Örn: Mert Yılmaz" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">E-posta Adresiniz</label>
+                        <input type="email" class="form-control" placeholder="Örn: mert@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Konu</label>
+                        <input type="text" class="form-control" placeholder="Örn: Özel Ders Bilgi" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mesajınız</label>
+                        <textarea class="form-control" placeholder="Bize ne iletmek istersiniz?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px; padding: 1.2rem; font-size: 1.1rem;">Gönder <i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-block">
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-info-text">
+                        <h4>Adres</h4>
+                        <p>Fitness Cad. Kas Sok. No:123<br>Kadıköy / İstanbul, Türkiye</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-info-text">
+                        <h4>Telefon</h4>
+                        <p>+90 555 123 45 67<br>+90 216 987 65 43</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-info-text">
+                        <h4>E-posta</h4>
+                        <p>info@hardmuscle.com<br>support@hardmuscle.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="far fa-clock"></i></div>
+                    <div class="contact-info-text">
+                        <h4>Çalışma Saatleri</h4>
+                        <p>Pzt - Cum: 06:00 - 23:00<br>Cmt - Paz: 08:00 - 21:00</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+                    <h4 style="color: white; margin-bottom: 1rem;">Bizi Takip Edin</h4>
+                    <div class="social-links" style="gap: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" style="border-top: none;">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Hard<span>Muscle</span></h3>
+                <p>Türkiye'nin en yenilikçi fitness markası. Hedeflerinize ulaşmanız için ihtiyacınız olan her şey
+                    kaliteli bir yapıda burada.</p>
+            </div>
+            <div class="footer-col footer-links">
+                <h3>Hızlı Linkler</h3>
+                <a href="home.html">Ana Sayfa</a>
+                <a href="products.html">Ürünler</a>
+                <a href="classes.html">Ders Programı</a>
+                <a href="contact.html">İletişim / Hakkımızda</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HardMuscle. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const contactSection = document.querySelector('.contact-section');
+                if (contactSection) {
+                    contactSection.style.opacity = "1";
+                    contactSection.style.transform = "translateY(0)";
+                }
+            }, 300);
+        });
+    </script>
+</body>
+</html>
